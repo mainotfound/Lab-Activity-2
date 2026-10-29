@@ -1,5 +1,4 @@
-
-public class Vehicle {
+public abstract class Vehicle {
 
     String brand;
     String model;
@@ -22,4 +21,10 @@ public class Vehicle {
     public boolean isVintage() {
         return calculateAge() > 25;
     }
+
+    // Abstract methods to be implemented by all subclasses
+    public abstract void moveForward();
+    public abstract void moveBackwards();
+    public abstract void moveLeft();
+    public abstract void moveRight();
 }
